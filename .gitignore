@@ -1,0 +1,39 @@
+# Large data files — hosted on HuggingFace
+*.npz
+*.pt
+*.pth
+*.ckpt
+
+# Dataset files — too large for GitHub
+features/
+labels_all/
+benchmarks/DAD/videos/
+benchmarks/DAD/raw_frames/
+benchmarks/CCD/
+tmp_*/
+hf_cache/
+demo_clips/
+demo_clips/
+
+# Generated outputs
+*.avi
+precog_demo_*.mp4
+clip_ambient.*
+obj_norm_stats.json
+danger_frame_index.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials — never commit these
+*.key
+*.token
+.huggingface
